@@ -4,7 +4,7 @@ import signal
 
 def destroy(signum, frame):
     print ('destroy is called')
-    raise
+    raise Exception("catch finish signal")
 
 signal.signal(signal.SIGHUP, destroy)
 signal.signal(signal.SIGTERM, destroy)
