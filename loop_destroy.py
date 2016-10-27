@@ -1,7 +1,6 @@
 # coding: UTF-8
 
 import signal
-import sys
 
 def destroy(signum, frame):
     print ('destroy is called')
